@@ -1,0 +1,295 @@
+/* General Body and Container Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background: #004d99; /* Dark Blue */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #003366 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 2.2em;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f7b034; /* Orange/Gold */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #f7b034; /* Orange/Gold */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #e6a02b;
+}
+
+/* Hero Section (Home Page) */
+#hero {
+    background: url('lightblue.jpg') no-repeat center center/cover; /* Replace with actual image */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* General Section Styles */
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2, section h3 {
+    color: #004d99;
+    margin-top: 0;
+    border-bottom: 2px solid #f7b034;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Announcements Section */
+#announcements ul {
+    list-style: none;
+    padding: 0;
+}
+
+#announcements li {
+    background: #e9f0f7;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #004d99;
+    border-radius: 4px;
+}
+
+/* Faculty Page Styles */
+.faculty-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.faculty-member:last-child {
+    border-bottom: none;
+}
+
+.faculty-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #004d99;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.faculty-member h3 {
+    margin: 0 0 5px 0;
+    color: #004d99;
+}
+
+.faculty-member p {
+    margin: 5px 0;
+}
+
+/* Contact Us Page Styles */
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#contact-form button {
+    width: auto;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Gallery Page Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.gallery-item p {
+    padding: 15px;
+    margin: 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+
+/* Footer Styles */
+footer {
+    background: #003366; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: #002244 3px solid;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+    }
+
+    .faculty-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faculty-member img {
+        margin: 0 auto 15px auto;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack images on small screens */
+    }
+}
