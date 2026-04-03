@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSGCAS - Home</title>
-    <link rel="stylesheet" href="sty.css">
-    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
+  <meta charset="UTF-8">
+  <title>PSG College Of Arts & Science</title>
+  <link rel="stylesheet" href="kumar.css">
+</head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.jpg" alt="PSGCAS Logo"> <h1>PSGCAS</h1>
-            </div>
-            <nav>
+  <header>
+    <div class="hero">
+      <h1>PSG College Of Arts & Science</h1>
+      <p>Today's Moments are Tomorrow's Memories</p>
+      <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="psgg.html" class="active">Home</a></li>
                     <li><a href="abouts.html">About Us</a></li>
-                    <li><a href="psg.html">Gallery</a></li>
+					<li><a href="psg.html">Gallery</a></li>
 					<li><a href="courses.html">Courses</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-        <section id="hero" class="background-section">
-            <div class="hero-content container">
-                <h2>Welcome to PSG College of Arts & Science!</h2>
-                <p>Nurturing minds, shaping futures since 1947. Join a legacy of excellence in education and innovation.</p>
-                <a href="abouts.html" class="btn">Explore PSGCAS</a>
-            </div>
-        </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>PSG College of Arts and Science (PSGCAS) is a prestigious autonomous institution located in Coimbatore, Tamil Nadu, established in 1947 by the PSG & Sons’ Charities Trust. It’s affiliated with Bharathiar University and has earned an A++ grade accreditation from NAAC, making it one of the top-ranked colleges in India — #11 in the NIRF 2024 rankings.
+	
+    <img src="college_building.jpg" alt="College Building">
+  </section>
+  <section id="courses">
+    <h2>Courses We Offer</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Computer Science</h3>
+        <p>We offers both undergraduate (UG) and postgraduate (PG) programs in Computer Science. Specifically, we offer a B.Sc. in Computer Science, a B.Sc. in Computer Science with Data Analytics, and an M.Sc. in Computer Science. A Bachelor of Computer Application (BCA) is also available. 
+		</p>
+      </div>
+      <div class="card">
+        <h3>Commerce</h3>
+        <p>We offers a variety of Bachelor of Commerce (B.Com) and Master of Commerce (M.Com) courses. These include specializations like General, Corporate Secretaryship, Professional Accounting, E-Commerce, and Computer Applications. Additionally, we offer specialized B.Com programs in areas like Retail Marketing and Foreign Trade.
+		</p>
+      </div>
+      <div class="card">
+        <h3>Life Sciences</h3>
+        <p>We offers several life science courses, including Biotechnology, Microbiology, and Zoology at the Bachelor of Science (B.Sc) level. We also offer an M.Sc. in Biotechnology. Additionally, We offer courses like Nutrition and Dietetics, and Food Science and Nutrition.
+		</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-        <section id="announcements" class="container content-section">
-            <h3>Latest Announcements</h3>
-            <ul>
-                <li>Admissions open for various UG & PG programs for the upcoming academic year. <a href="#">Learn More</a></li>
-                <li>National Conference on "Emerging Trends in Data Science" on August 10, 2025.</li>
-                <li>Placement Drive by Top MNCs on August 25-26, 2025.</li>
-                <li>Annual Sports Meet 2025 results declared. Congratulations to all participants!</li>
-            </ul>
-        </section>
+  <footer>
+    <p>&copy; 2025  PSGCAS | Designed with ♥</p>
+  </footer>
 
-        <section id="quick-links" class="container content-section">
-            <h3>Quick Links</h3>
-            <div class="links-grid">
-                <a href="#" class="quick-link-item">Admissions</a>
-                <a href="#" class="quick-link-item">Academic Programs</a>
-                <a href="#" class="quick-link-item">Research & Publications</a>
-                <a href="#" class="quick-link-item">Student Life</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 PSG College of Arts & Science. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter--v1.png" alt="Twitter"></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new--v1.png" alt="Instagram"></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin--v1.png" alt="LinkedIn"></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scr.js"></script>
+  <script src="saravana.js"></script>
 </body>
 </html>
